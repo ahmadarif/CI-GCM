@@ -10,10 +10,11 @@ public function gcm()
 	$this->load->library('gcm');
 	
 	// seting message
+	$this->gcm->setTtl("Title");
 	$this->gcm->setMessage('Test message from CI');
 	
 	// add receiver
-	$this->gcm->addRecepient('cetogWByksA:APA91bE4DUnonEMStQMhBJI6sBjCzV94LJhjz_MlgtfNB3ipy1-bV8DMptZHuIvA5WbpWTIX7cGwoeq2vG1gKXRKjFKHjU4zuO5hs4A8s8k0KbXT_da9PJWTxB7nLSm6EmqdUz4ud2ju');
+	$this->gcm->addRecepient('DEVICE_ID_RECEPIENT');
 	//$this->gcm->addRecepient('New reg id');
 	
 	// then send
