@@ -10,7 +10,6 @@ public function gcm()
 	$this->load->library('gcm');
 	
 	// seting message
-	$this->gcm->setTtl("Title");
 	$this->gcm->setMessage('Test message from CI');
 	
 	// add receiver
